@@ -11,6 +11,9 @@ export default function Footer() {
               Perfect Data Entry
             </span>
           </Link>
+          <div className="mt-6 leading-relaxed">
+            <p>Perfect Data Entry team is amongst the industry’s top 10 virtual assistant companies. We build high-performance teams that deliver results! Our goodwill and body of work across the globe speak for themselves.</p>
+          </div>
         </div>
 
 
