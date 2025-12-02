@@ -22,7 +22,7 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="#about" className="hover:text-[var(--primary-color)] transition">
+              <Link href="about-us" className="hover:text-[var(--primary-color)] transition">
                 About Us
               </Link>
             </li>
