@@ -1,4 +1,6 @@
 import WhyTeamSection from "../components/whyteamsection";
+import Banner from "../components/banner";
+import ContactForm from "../components/contacForm";
 
 export default function AboutPage() {
 
@@ -19,14 +21,9 @@ export default function AboutPage() {
         <>
 
             {/* Banner Section */}
-            <section className="relative bg-[url('/contact-us/Banner.jpg')] bg-cover bg-center h-[60vh] flex items-center justify-center"
-            >
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/60"></div>
-
-                <div className="relative z-10 text-center text-white px-4">
-                    <h1 className="text-4xl font-bold mb-3">India's Leading Data Support and BPO/BPM Company</h1>
-                </div>
+            <section>
+                <Banner title="India's Leading Data Support and BPO/BPM Company"
+                    bannerImage="/contact-us/Banner.jpg" />
             </section>
 
             {/* Company Overview */}
@@ -81,7 +78,7 @@ export default function AboutPage() {
                             <div className="text-blue-600 mb-4">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
-                                    stroke="currentColor" className="w-10 h-10">
+                                    stroke="currentColor" className="w-10 h-10 text-[var(--primary-color)]">
                                     <path strokeLinecap="round" strokeLinejoin="round"
                                         d="M12 6.75a5.25 5.25 0 100 10.5 5.25 5.25 0 000-10.5z" />
                                     <path strokeLinecap="round" strokeLinejoin="round"
@@ -99,7 +96,7 @@ export default function AboutPage() {
                             <div className="text-blue-600 mb-4">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
-                                    stroke="currentColor" className="w-10 h-10">
+                                    stroke="currentColor" className="w-10 h-10 text-[var(--primary-color)]">
                                     <path strokeLinecap="round" strokeLinejoin="round"
                                         d="M12 6v6l3 3M12 3a9 9 0 110 18 9 9 0 010-18z" />
                                 </svg>
@@ -115,7 +112,7 @@ export default function AboutPage() {
                             <div className="text-blue-600 mb-4">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
-                                    stroke="currentColor" className="w-10 h-10">
+                                    stroke="currentColor" className="w-10 h-10 text-[var(--primary-color)]">
                                     <path strokeLinecap="round" strokeLinejoin="round"
                                         d="M11.48 3.499a.563.563 0 011.04 0l2.01 5.136a.563.563 0 00.475.347l5.517.403c.55.04.774.738.356 1.108l-4.205 3.7a.563.563 0 00-.18.534l1.36 5.29c.133.52-.454.92-.92.65l-4.82-2.77a.563.563 0 00-.56 0l-4.82 2.77c-.466.27-1.053-.13-.92-.65l1.36-5.29a.563.563 0 00-.18-.534l-4.205-3.7c-.418-.37-.194-1.067.356-1.108l5.517-.403a.563.563 0 00.475-.347l2.01-5.136z" />
                                 </svg>
@@ -131,7 +128,7 @@ export default function AboutPage() {
                             <div className="text-blue-600 mb-4">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
-                                    stroke="currentColor" className="w-10 h-10">
+                                    stroke="currentColor" className="w-10 h-10 text-[var(--primary-color)]">
                                     <path strokeLinecap="round" strokeLinejoin="round"
                                         d="M8.5 7a4.5 4.5 0 118.997.164M18 19v-5m0 0l3 3m-3-3l-3 3M6 19v-5m0 0l-3 3m3-3l3 3M4.5 7a4.5 4.5 0 118.997.164" />
                                 </svg>
@@ -237,7 +234,7 @@ export default function AboutPage() {
                                         {/* Blue tick */}
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
-                                            className="w-6 h-6 text-blue-500 flex-shrink-0 mr-3 mt-1"
+                                            className="w-6 h-6 text-[var(--primary-color)] flex-shrink-0 mr-3 mt-1"
                                             fill="none"
                                             viewBox="0 0 24 24"
                                             stroke="currentColor"
@@ -259,21 +256,7 @@ export default function AboutPage() {
                         </div>
 
                         {/* Right Column - Contact Form */}
-                        <form className="bg-white p-8 rounded-xl shadow-md space-y-4">
-                            <h3 className="text-2xl font-bold text-gray-900 mb-6">Take the First Step</h3>
-
-                            <input type="text" placeholder="Your Name*" className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]" required />
-
-                            <input type="email" placeholder="Your Best Email*" className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]" required />
-
-                            <input type="text" placeholder="Best Contact Number*" className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]" required />
-
-                            <textarea placeholder="How Can We Help You?*" className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]" rows={5} required />
-
-                            <button type="submit" className="bg-[var(--primary-color)] text-white px-6 py-3 rounded-md font-semibold hover:bg-opacity-90 transition">
-                                Submit
-                            </button>
-                        </form>
+                       <ContactForm />
 
                     </div>
                 </div>
@@ -287,7 +270,7 @@ export default function AboutPage() {
 
                 <a
                     href="/contact-us"
-                    className="px-8 py-3 bg-blue-700 text-white rounded-lg font-semibold hover:bg-blue-800"
+                    className="cursor-pointer px-8 py-3 bg-[var(--primary-color)] text-white border-2 border-[var(--primary-color)] rounded-lg font-semibold hover:bg-transparent hover:text-[var(--primary-color)] transition"
                 >
                     Contact Us
                 </a>

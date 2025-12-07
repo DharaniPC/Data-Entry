@@ -7,9 +7,7 @@ export default function Footer() {
         {/* Logo */}
         <div className="mb-8 md:mb-0 w-[30%]">
           <Link href="/">
-            <span className="text-2xl font-bold text-[var(--primary-color)] cursor-pointer">
-              Perfect Data Entry
-            </span>
+            <img src="/Logo.png" alt="Perfect Data Entry" width="80" height="auto" />
           </Link>
           <div className="mt-6 leading-relaxed">
             <p>Perfect Data Entry team is amongst the industry’s top 10 virtual assistant companies. We build high-performance teams that deliver results! Our goodwill and body of work across the globe speak for themselves.</p>

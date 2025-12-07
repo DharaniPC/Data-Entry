@@ -1,5 +1,7 @@
-import Image from "next/image";
 import WhyTeamSection from "./components/whyteamsection";
+import Banner from "./components/banner";
+import HighlightSection from "./components/highlightSection";
+import ContactForm from "./components/contacForm";
 
 
 export default function Home() {
@@ -18,22 +20,13 @@ export default function Home() {
     <div className="flex min-h-screen font-sans">
       <main className="flex min-h-screen w-full flex-col">
 
-        <section className="min-h-[70vh] flex items-center justify-center bg-gray-100 px-6">
-          <div className="max-w-3xl text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Build High-Performance Teams
-            </h1>
-
-            <p className="text-lg md:text-xl text-gray-600 mb-6">
-              Automated Intelligent Management Solutions.
-            </p>
-
-            <a href="#contact">
-            <button className="cursor-pointer px-8 py-3 bg-[var(--primary-color)] text-white rounded-lg font-semibold hover:bg-blue-700 transition">
-              Get Started
-            </button>
-            </a>
-          </div>
+        {/* Banner Section */}
+        <section>
+          <Banner title="Build High-Performance Teams"
+            description="Automated Intelligent Management Solutions."
+            buttonLabel="Get Started"
+            buttonLink="#contact"
+            bannerImage="/contact-us/Banner.jpg" />
         </section>
 
         <section>
@@ -69,22 +62,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="flex items-center justify-center bg-gray-100 px-6 py-15">
-          <div className="max-w-3xl text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Discover What Your Business Can Achieve
-            </h2>
+        <section>
+          <HighlightSection title="Discover What Your Business Can Achieve"
+            description="Find new ways to improve operations, reduce costs, and grow. Our insights will help you spot untapped opportunities and make impactful changes."
+            buttonLabel="See What’s Possible"
+            buttonLink="/contact-us" />
 
-            <p className="text-lg md:text-xl text-gray-600 mb-6">
-              Find new ways to improve operations, reduce costs, and grow. Our insights will help you spot untapped opportunities and make impactful changes.
-            </p>
-
-            <a href="#contact">
-              <button className="cursor-pointer px-8 py-3 bg-[var(--primary-color)] text-white rounded-lg font-semibold hover:bg-blue-700 transition">
-                See What’s Possible
-              </button>
-            </a>
-          </div>
         </section>
 
         <section>
@@ -180,7 +163,7 @@ export default function Home() {
                     {/* Blue tick */}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-blue-500 flex-shrink-0 mr-3 mt-1"
+                      className="w-6 h-6 text-[var(--primary-color)] flex-shrink-0 mr-3 mt-1"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -198,21 +181,7 @@ export default function Home() {
               </ul>
 
               {/* Right Column - Contact Form */}
-              <form className="bg-white p-8 rounded-xl shadow-md space-y-4">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Take the First Step</h3>
-
-                <input type="text" placeholder="Your Name*" className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]" required />
-                
-                <input type="email" placeholder="Your Best Email*" className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]" required />
-                
-                <input type="text" placeholder="Best Contact Number*" className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]" required />
-
-                <textarea placeholder="How Can We Help You?*" className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]" rows={5} required />
-
-                <button type="submit" className="bg-[var(--primary-color)] text-white px-6 py-3 rounded-md font-semibold hover:bg-opacity-90 transition">
-                  Submit
-                </button>
-              </form>
+              <ContactForm />
 
             </div>
           </div>

@@ -1,20 +1,15 @@
+import Banner from "../components/banner";
+
 export default function ContactPage() {
     return (
         <div className="w-full">
 
             {/* Banner Section */}
-            <section className="relative bg-[url('/contact-us/Banner.jpg')] bg-cover bg-center h-[60vh] flex items-center justify-center"
-            >
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/60"></div>
-
-                <div className="relative z-10 text-center text-white px-4">
-                    <h1 className="text-4xl font-bold mb-3">Request Free Price Quote!</h1>
-                    <p className="max-w-2xl mx-auto text-lg">
-                        No upfront payment. Just let us know your needs and we will provide your FREE price
-                        quote. Contact us now for clean, reliable, on-time delivery data – every time!!!
-                    </p>
-                </div>
+            <section>
+                <Banner title="Request Free Price Quote!"
+                    description=" No upfront payment. Just let us know your needs and we will provide your FREE price
+                        quote. Contact us now for clean, reliable, on-time delivery data – every time!!!"
+                    bannerImage="/contact-us/Banner.jpg" />
             </section>
 
             {/* Contact Information + Form Section */}
@@ -98,7 +93,7 @@ export default function ContactPage() {
                                 <textarea className="w-full border rounded-lg px-4 py-2" rows={4} placeholder="Describe your needs"></textarea>
                             </div>
 
-                            <button className="w-full py-3 bg-[var(--primary-color)] text-white rounded-lg font-semibold hover:bg-blue-700 transition">
+                            <button className="cursor-pointer px-8 py-3 bg-[var(--primary-color)] text-white border-2 border-[var(--primary-color)] rounded-lg font-semibold hover:bg-transparent hover:text-[var(--primary-color)] transition">
                                 Submit Request
                             </button>
                         </form>
