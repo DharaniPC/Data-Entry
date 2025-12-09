@@ -1,7 +1,12 @@
-export default function ContactForm() {
+
+interface SectionProp {
+    title ?:string;
+}
+
+export default function ContactForm({title} : SectionProp) {
     return (
         <form className="bg-white p-8 rounded-xl shadow-md space-y-4">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Take the First Step</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">{title && title || "Take the First Step"}</h3>
 
             <input type="text" placeholder="Your Name*" className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]" required />
 

@@ -4,12 +4,10 @@ import { useEffect, useState } from "react";
 
 export default function WhyTeamSection() {
   const stats = [
-    { number: 1132, suffix: "+", label: "SUCCESSFUL PROJECTS" },
-    { number: 24, suffix: "/7", label: "CUSTOMER SERVICE" },
-    { number: 300, suffix: "+", label: "SKILLED EXPERTS" },
-    { number: 12, suffix: "+", label: "YEARS OF EXPERIENCE" },
-    { number: 40, suffix: "%", label: "COST REDUCTION" },
-    { number: 24, suffix: "Hrs", label: "FASTER TURNAROUND" },
+    { number: 984, suffix: "+", label: "SUCCESSFUL PROJECTS" },
+    { number: 24, suffix: "/7", label: "CUSTOMER SUPPORT" },
+    { number: 682, suffix: "+", label: "QUALIFIED TEAM" },
+    { number: 12, suffix: "+", label: "YEARS OF EXPERIENCE" }
   ];
 
   // States for counting
@@ -43,7 +41,7 @@ export default function WhyTeamSection() {
         </h2>
 
         {/* Stats Grid - 6 columns */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 text-center">
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-8 text-center">
           {stats.map((stat, index) => (
             <div key={index}>
               <p className="text-4xl md:text-5xl font-bold text-[var(--primary-color)] mb-2">

@@ -2,7 +2,43 @@ import WhyTeamSection from "./components/whyteamsection";
 import Banner from "./components/banner";
 import HighlightSection from "./components/highlightSection";
 import ContactForm from "./components/contacForm";
+import IconGrid from "./components/iconGrid";
 
+const serviceContent = [
+  {
+    title: "Data Entry & Capture Services ",
+    description: "We convert raw data from any source (paper, PDF, images) into clean, structured digital assets using manual and OCR data entry services, ensuring high accuracy and completeness."
+  },
+  {
+    title: "Data Processing & Integration Services",
+    description: "We organize and structure your data, then integrate it seamlessly with your existing platforms (CRM/ERP) to create a unified, accessible system for comprehensive business insights."
+  },
+  {
+    title: "Data Cleansing & Validation Services",
+    description: "We ensure data integrity by removing errors, duplicates, and inconsistencies. Our cleansing and validation deliver audit-ready, reliable datasets for confident decision-making."
+  },
+  {
+    title: "Data Conversion & Mining Services",
+    description: "Convert data into usable formats (PDF to Excel, image to Word) and uncover actionable patterns. Our services transform raw information into strategic intelligence."
+  },
+  {
+    title: "Data Enrichment & Analysis Services",
+    description: "Enhance your data with critical missing details and insights. Our enrichment and analysis provide deeper context to empower strategic planning and targeted campaigns."
+  },
+  {
+    title: "Data Visualization & Reporting Services",
+    description: "Transform complex datasets into clear, interactive dashboards and reports. Our data visualization makes key trends instantly understandable for faster, smarter business decisions."
+  }
+];
+
+const transforLeftSectionContent = [
+  "<b>Guaranteed Accuracy:</b> Multi-tier QA ensures a 99.95% accuracy rate.",
+  "<b>TAT Driven:</b> Meet deadlines with fast, scalable services and 24/7 availability.",
+  "<b>Bank-Grade Security:</b> Round-the-clock service with bank-level data protection & NDAs.",
+  "<b>Tech-Powered Efficiency:</b> Advanced software & automation on secure cloud platforms.",
+  "<b>Cost-Effective:</b> Slash costs by up to 70% with flexible pricing models.",
+  "<b>Dedicated Management:</b> A single point of contact for seamless workflow."
+];
 
 export default function Home() {
 
@@ -22,171 +58,150 @@ export default function Home() {
 
         {/* Banner Section */}
         <section>
-          <Banner title="Build High-Performance Teams"
-            description="Automated Intelligent Management Solutions."
-            buttonLabel="Get Started"
+          <Banner title="Secure & Scalable Data Entry Solutions"
+            description="We transform your unstructured documents, forms, and data into clean, actionable digital assets. Get secure, scalable, and cost-effective data entry outsourcing with a guaranteed 99.95% accuracy."
+            buttonLabel="Get a Free Pilot Project!"
             buttonLink="#contact"
             bannerImage="/contact-us/Banner.jpg" />
         </section>
 
         <section>
-          <div className="w-full flex gap-10 items-center justify-center py-15">
-            <div className="max-w-7xl text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Drive Growth with Advanced Analytics, Intelligent Automation, Targeted Digital Marketing, and Specialized Staffing Solutions</h2>
+          <div className="w-full flex justify-center px-6 py-15 bg-gray-50">
+            <div className="max-w-7xl space-y-6">
+              <h2 className="text-3xl font-bold">Build Your Scalable Virtual Team with Expert Data Entry Services</h2>
+              <h3 className="text-2xl font-bold">Stop letting complex data management slow down your business growth. At Perfect Data Entry, we cut through the complexity, offering a seamless data entry outsourcing solution that acts as your dedicated, offshore data entry team.</h3>
 
-              <p className="mb-8">Achieve your goals with targeted solutions designed for impact. Our services are customized to enhance productivity, optimize resources, and help your business thrive in a competitive landscape.</p>
+              <p className="text-gray-700 leading-relaxed">
+                Backed by 8+ years of industry expertise, we’ve successfully delivered 1,132+ projects with a specialized team of 300+ data management professionals. Our proven systems deliver unparalleled accuracy and efficiency, consistently helping clients reduce operational costs by 30-60%.
+              </p>
 
-              <div className="flex flex-row gap-8">
-                <div className="border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
-                  <h3 className="text-2xl md:text-3xl mb-4">Data Analytics</h3>
-                  <p>Gain a competitive edge with insights tailored to your business. Our customized dashboards and predictive analytics reveal hidden opportunities and trends, empowering you to make informed decisions with confidence.</p>
-                </div>
-
-                <div className="border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
-                  <h3 className="text-2xl md:text-3xl mb-4">Business Automation</h3>
-                  <p>Reduce manual tasks and focus on what matters most. With our AI-driven automation, streamline operations, cut costs, and improve accuracy, allowing your team to work smarter and achieve more.</p>
-                </div>
-
-                <div className="border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
-                  <h3 className="text-2xl md:text-3xl mb-4">Digital Marketing</h3>
-                  <p>Engage your ideal customers and maximize your impact. Our targeted digital marketing strategies reach the right audience at the right time, helping you build stronger connections and grow your brand.</p>
-                </div>
-
-                <div className="border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
-                  <h3 className="text-2xl md:text-3xl mb-4">Staffing Solutions</h3>
-                  <p>Expand your team with top talent when you need it. Our flexible staffing solutions provide you with skilled professionals who align with your goals, allowing you to scale effortlessly and drive results.</p>
-                </div>
-
-              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Why settle for adequate when you can achieve excellence? Our unwavering commitment to client success is powered by 24/7 dedicated support and a partnership approach. When you choose us, you gain more than a service—you gain a strategic partner invested in your goals.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                Take control of your data and unlock a true competitive edge. Isn’t it time your data worked as hard as you do? Trust the experts at Perfect Data Entry to deliver precision, every single time.
+              </p>
             </div>
           </div>
-        </section>
-
-        <section>
-          <HighlightSection title="Discover What Your Business Can Achieve"
-            description="Find new ways to improve operations, reduce costs, and grow. Our insights will help you spot untapped opportunities and make impactful changes."
-            buttonLabel="See What’s Possible"
-            buttonLink="/contact-us" />
-
         </section>
 
         <section>
           <div className="w-full flex gap-10 justify-center py-15">
             <div className="max-w-7xl text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Industries We Serve: Pioneering Solutions for Every Field</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Data Entry Services</h2>
 
-              <p className="mb-8">Explore the Sectors We Serve: From healthcare to automotive, discover how our tailored solutions are designed to meet the unique challenges and opportunities of each industry.</p>
+              <p className="text-2xl font-bold mb-4">Precision-Engineered Data Entry Services for Every Business Need</p>
+              <p className="mb-8">We deliver more than just data typing; we provide secure data processing solutions that become a reliable extension of your team. As your long-term data entry partner, we combine the highest accuracy with competitive pricing to fuel your business growth.</p>
 
-              <div className="grid md:grid-cols-3 gap-8  text-left">
-                <div className="p-8 rounded-xl border border-transparent hover:border-[var(--primary-color)] shadow-md hover:shadow-lg transition-all duration-300 bg-white">
+              <IconGrid sectionContent={serviceContent} />
+            </div>
+          </div>
+        </section>
+        <section>
+          <HighlightSection title="Ready to Elevate Your Data Management?"
+            description='Stop wrestling with spreadsheets and manual entry. Outsource data entry to experts and unlock efficiency.
+<ul className="space-y-4 text-gray-700 text-left"> 
+<li className="flex items-start gap-2"> 
+<span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#447FB0] text-white text-sm mt-1">
+      ✓
+    </span>
+<b>Get a Risk-Free Pilot:</b> Test our services with no commitment.</li>
+<li className="flex items-start"> 
+<span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#447FB0] text-white text-sm mt-1">
+      ✓
+    </span>
+<b>Request a Custom Quote:</b> Tailored solutions for your budget and needs.</li></ul>'
+            buttonLabel="Calculate Your Savings"
+            buttonLink="/contact-us" />
 
-                  <div className="mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-[var(--primary-color)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 22c4.418 0 8-3.582 8-8V5l-8-3-8 3v9c0 4.418 3.582 8 8 8z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Insurance</h3>
-                  <p className="text-gray-600 leading-relaxed">Enhance claim accuracy and customer satisfaction with our AI-driven automation and compliance tools.</p>
+        </section>
+
+        <section >
+          <div className="w-full flex justify-center px-6 py-15 bg-gray-50">
+            <div className="max-w-7xl space-y-6">
+              <h2 className="text-3xl font-bold text-center">Why We Are Your Trusted Data Entry Partner</h2>
+              <p className="text-2xl font-bold text-center">We go beyond basic typing to become a seamless extension of your team, delivering unmatched value and reliability.</p>
+              <div className="w-full flex flex-row gap-10">
+                <div className="w-[50%]">
+
+                  <ul className="space-y-4 text-gray-700 list-none">
+                    {transforLeftSectionContent.map((content, index) => (
+                      <li key={index} className="flex items-start">
+                        {/* Blue tick */}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="w-6 h-6 text-[var(--primary-color)] flex-shrink-0 mr-3 mt-1"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="3"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span dangerouslySetInnerHTML={{ __html: content }} />
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="w-[50%]">
+                  <img src="/contact-us/Banner.jpg" alt="Why US" className="w-[500px] h-auto"></img>
                 </div>
 
-                <div className="p-8 rounded-xl border border-transparent hover:border-[var(--primary-color)] shadow-md hover:shadow-lg transition-all duration-300 bg-white">
-                  <div className="mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-[var(--primary-color)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12h3l3 7 4-14 3 7h4" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Healthcare</h3>
-                  <p className="text-gray-600 leading-relaxed">Deliver secure and compliant data management, improving efficiency across healthcare operations.</p>
-                </div>
-
-                <div className="p-8 rounded-xl border border-transparent hover:border-[var(--primary-color)] shadow-md hover:shadow-lg transition-all duration-300 bg-white">
-                  <div className="mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-[var(--primary-color)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-2" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 13h.01" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Finance</h3>
-                  <p className="text-gray-600 leading-relaxed">Empower strategic financial decisions with real-time business intelligence dashboards and analytics.</p>
-                </div>
-
-                <div className="p-8 rounded-xl border border-transparent hover:border-[var(--primary-color)] shadow-md hover:shadow-lg transition-all duration-300 bg-white">
-                  <div className="mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-[var(--primary-color)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 21h18M4 21V8l7-5v13M21 21V10l-7-5v13" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Manufacturing</h3>
-                  <p className="text-gray-600 leading-relaxed">Boost production efficiency with predictive analytics and optimized resource allocation strategies.</p>
-                </div>
-
-                <div className="p-8 rounded-xl border border-transparent hover:border-[var(--primary-color)] shadow-md hover:shadow-lg transition-all duration-300 bg-white">
-                  <div className="mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-[var(--primary-color)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 2l1.5 4h9L18 2H6z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 6h18v16H3V6z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Retail & E-commerce</h3>
-                  <p className="text-gray-600 leading-relaxed">Increase customer engagement and sales with targeted digital marketing and precise data insights.</p>
-                </div>
-
-                <div className="p-8 rounded-xl border border-transparent hover:border-[var(--primary-color)] shadow-md hover:shadow-lg transition-all duration-300 bg-white">
-                  <div className="mb-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-[var(--primary-color)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 13l1-3h16l1 3M5 16h2v2H5v-2zm12 0h2v2h-2v-2z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 13V9h16v4" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Automotive</h3>
-                  <p className="text-gray-600 leading-relaxed">Advance your operations with our data analytics and automation, improving inventory and service quality.</p>
-                </div>
               </div>
+
             </div>
           </div>
         </section>
 
-        <section id="about">
+        <section>
           <WhyTeamSection />
         </section>
 
+        <section>
+          <HighlightSection title="We offer top-notch data entry virtual assistant services with a referral commission of up to 30%, and we also provide fully white-labelled solutions for resellers." />
+        </section>
 
         <section id="contact" className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-12 items-start">
+            <div className="flex flex-col gap-5">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">Stop Managing Data, Start Leveraging It.<br /> Partner with Our Data Entry Experts.</h2>
+              <div className="text-1xl text-gray-900 text-center">Tired of the tedious and time-consuming task of data management? <br />Our dedicated data entry outsourcing services handle the heavy lifting, so you can focus on core business growth.</div>
 
-              {/* Left Column - Features List */}
-              <ul className="space-y-4 text-gray-700 list-none">
-                {features.map((feature, index) => (
-                  <li key={index} className="flex items-start">
-                    {/* Blue tick */}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-[var(--primary-color)] flex-shrink-0 mr-3 mt-1"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="3"
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="grid md:grid-cols-2 gap-12 items-start">
+                {/* Left Column - Features List */}
+                <div className="flex flex-col gap-5">
 
-              {/* Right Column - Contact Form */}
-              <ContactForm />
+                  <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
+                    <h3 className="text-2xl md:text-3xl mb-4">Consult & Strategize</h3>
+                    <p>Begin with a free consultation to outline your exact needs, from high-volume data processing and e-commerce product entry to specialized data conversion projects. We listen to build a perfectly tailored solution.</p>
+                  </div>
+
+                  <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
+                    <h3 className="text-2xl md:text-3xl mb-4">Launch in 24 Hours</h3>
+                    <p>Once aligned, our expert offshore data entry team in India mobilizes immediately. We onboard and launch your project within 24 hours, ensuring a seamless, efficient, and secure start with zero downtime.</p>
+                  </div>
+
+                  <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
+                    <h3 className="text-2xl md:text-3xl mb-4">Validate with a Risk-Free Pilot</h3>
+                    <p>Experience our accuracy and efficiency firsthand with a no-cost, no-obligation pilot project. Test our secure data entry processes and see the tangible results before making any commitment.</p>
+                  </div>
+
+
+                </div>
+
+                {/* Right Column - Contact Form */}
+                <div>
+                  <ContactForm title="Contact Us Now!" />
+                </div>
+              </div>
 
             </div>
           </div>
         </section>
-
       </main>
     </div>
   );

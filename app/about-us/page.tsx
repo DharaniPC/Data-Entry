@@ -2,6 +2,11 @@ import WhyTeamSection from "../components/whyteamsection";
 import Banner from "../components/banner";
 import ContactForm from "../components/contacForm";
 
+export const metadata = {
+  title: "Perfect Data Entry | Outsourcing Solutions",
+  description: "Professional data entry, back-office, lead generation and more.",
+};
+
 export default function AboutPage() {
 
     const features = [
@@ -15,7 +20,6 @@ export default function AboutPage() {
         "Diverse service portfolio",
         "Relationships built on trust, integrity, and reliability"
     ];
-
 
     return (
         <>
