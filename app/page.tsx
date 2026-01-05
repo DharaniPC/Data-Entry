@@ -58,18 +58,35 @@ export default function Home() {
 
         {/* Banner Section */}
         <section>
-          <Banner title="Secure & Scalable Data Entry Solutions"
-            description="We transform your unstructured documents, forms, and data into clean, actionable digital assets. Get secure, scalable, and cost-effective data entry outsourcing with a guaranteed 99.95% accuracy."
-            buttonLabel="Get a Free Pilot Project!"
-            buttonLink="#contact"
-            bannerImage="/contact-us/Banner.jpg" />
+          <div className="relative bg-cover bg-center h-[80vh] flex justify-center"
+            style={{ backgroundImage: `url(/home/Home-Page-Banner.png)` }} >
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/60"></div>
+            <div className="w-full flex justify-center px-6 py-15 items-center text-left text-white relative z-10">
+              <div className="max-w-5xl w-[60%] space-y-6 px-4 flex flex-col gap-5">
+                <h1 className="text-4xl font-bold">Secure & Scalable Data Entry Solutions</h1>
+
+                <p className="max-w-2xl text-lg">
+                  We transform your unstructured documents, forms, and data into clean, actionable digital assets. Get secure, scalable, and cost-effective data entry outsourcing with a guaranteed 99.95% accuracy.
+                </p>
+                <a href="#contact">
+                  <button className="cursor-pointer px-8 py-3 bg-[var(--primary-color)] text-white border-2 border-[var(--primary-color)] rounded-lg font-semibold hover:bg-transparent hover:border-white transition">
+                    Get a Free Pilot Project!
+                  </button>
+                </a>
+              </div>
+              <div className="max-w-5xl w-[40%]">
+                <img src="/home/Banner.jpg"></img>
+              </div> 
+            </div>
+          </div>
         </section>
 
         <section>
-          <div className="w-full flex justify-center px-6 py-15 bg-gray-50">
-            <div className="max-w-7xl space-y-6">
-              <h2 className="text-3xl font-bold">Build Your Scalable Virtual Team with Expert Data Entry Services</h2>
-              <h3 className="text-2xl font-bold">Stop letting complex data management slow down your business growth. At Perfect Data Entry, we cut through the complexity, offering a seamless data entry outsourcing solution that acts as your dedicated, offshore data entry team.</h3>
+          <div className="w-full flex justify-center px-6 py-15 bg-gray-50 text-center">
+            <div className="max-w-5xl space-y-6">
+              <h2 className="text-3xl md:text-4xl  font-bold">Build Your Scalable Virtual Team with Expert Data Entry Services</h2>
+              <p className="text-gray-700 leading-relaxed">Stop letting complex data management slow down your business growth. At Perfect Data Entry, we cut through the complexity, offering a seamless data entry outsourcing solution that acts as your dedicated, offshore data entry team.</p>
 
               <p className="text-gray-700 leading-relaxed">
                 Backed by 8+ years of industry expertise, we’ve successfully delivered 1,132+ projects with a specialized team of 300+ data management professionals. Our proven systems deliver unparalleled accuracy and efficiency, consistently helping clients reduce operational costs by 30-60%.
@@ -87,40 +104,59 @@ export default function Home() {
 
         <section>
           <div className="w-full flex gap-10 justify-center py-15">
-            <div className="max-w-7xl text-center">
+            <div className="max-w-5xl text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Data Entry Services</h2>
 
-              <p className="text-2xl font-bold mb-4">Precision-Engineered Data Entry Services for Every Business Need</p>
+              <h3 className="text-2xl font-bold mb-4">Precision-Engineered Data Entry Services for Every Business Need</h3>
               <p className="mb-8">We deliver more than just data typing; we provide secure data processing solutions that become a reliable extension of your team. As your long-term data entry partner, we combine the highest accuracy with competitive pricing to fuel your business growth.</p>
 
               <IconGrid sectionContent={serviceContent} />
             </div>
           </div>
         </section>
-        <section>
-          <HighlightSection title="Ready to Elevate Your Data Management?"
-            description='Stop wrestling with spreadsheets and manual entry. Outsource data entry to experts and unlock efficiency.
-<ul className="space-y-4 text-gray-700 text-left"> 
-<li className="flex items-start gap-2"> 
-<span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#447FB0] text-white text-sm mt-1">
-      ✓
-    </span>
-<b>Get a Risk-Free Pilot:</b> Test our services with no commitment.</li>
-<li className="flex items-start"> 
-<span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#447FB0] text-white text-sm mt-1">
-      ✓
-    </span>
-<b>Request a Custom Quote:</b> Tailored solutions for your budget and needs.</li></ul>'
-            buttonLabel="Calculate Your Savings"
-            buttonLink="/contact-us" />
 
+        <section>
+          <div className="flex justify-center px-6 py-10 bg-[var(--primary-color)] text-white text-center">
+            <div className="max-w-5xl">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Elevate Your Data Management?</h2>
+
+              <h3 className="text-2xl font-bold mb-4">Stop wrestling with spreadsheets and manual entry. Outsource data entry to experts and unlock efficiency.</h3>
+
+              <ul className="space-y-4 mb-4">
+                <li className="flex gap-3 justify-center text-center">
+                  <span className="w-5 h-5 flex justify-center rounded-full bg-[#447FB0] text-white text-sm mt-1">
+                    ✓
+                  </span>
+                  <div className="text-center">
+                    <b>Get a Risk-Free Pilot:</b> Test our services with no commitment.
+                  </div>
+                </li>
+
+                <li className="flex gap-3 justify-center text-center">
+                  <span className="w-5 h-5 flex justify-center rounded-full bg-[#447FB0] text-white text-sm mt-1">
+                    ✓
+                  </span>
+                  <div className="text-center">
+                    <b>Request a Custom Quote:</b> Tailored solutions for your budget and needs.
+                  </div>
+                </li>
+              </ul>
+
+              <a href="/contact-us">
+                <button className="cursor-pointer px-8 py-3 bg-white text-[var(--primary-color)] border-2 rounded-lg font-semibold hover:bg-transparent hover:text-white hover:border-white transition">
+                  Calculate Your Savings
+                </button>
+              </a>
+
+            </div>
+          </div>
         </section>
 
         <section >
           <div className="w-full flex justify-center px-6 py-15 bg-gray-50">
-            <div className="max-w-7xl space-y-6">
-              <h2 className="text-3xl font-bold text-center">Why We Are Your Trusted Data Entry Partner</h2>
-              <p className="text-2xl font-bold text-center">We go beyond basic typing to become a seamless extension of your team, delivering unmatched value and reliability.</p>
+            <div className="max-w-5xl space-y-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">Why We Are Your Trusted Data Entry Partner</h2>
+              <p className="text-2xl font-bold text-center">We go beyond basic typing to become a seamless extension of your team,<br /> delivering unmatched value and reliability.</p>
               <div className="w-full flex flex-row gap-10">
                 <div className="w-[50%]">
 
@@ -148,7 +184,7 @@ export default function Home() {
                   </ul>
                 </div>
                 <div className="w-[50%]">
-                  <img src="/contact-us/Banner.jpg" alt="Why US" className="w-[500px] h-auto"></img>
+                  <img src="/Why-Choose-Us.png" alt="Why US" className="w-[500px] h-auto"></img>
                 </div>
 
               </div>
@@ -161,32 +197,29 @@ export default function Home() {
           <WhyTeamSection />
         </section>
 
-        <section>
-          <HighlightSection title="We offer top-notch data entry virtual assistant services with a referral commission of up to 30%, and we also provide fully white-labelled solutions for resellers." />
-        </section>
-
         <section id="contact" className="py-16 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-5xl mx-auto px-6">
             <div className="flex flex-col gap-5">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">Stop Managing Data, Start Leveraging It.<br /> Partner with Our Data Entry Experts.</h2>
-              <div className="text-1xl text-gray-900 text-center">Tired of the tedious and time-consuming task of data management? <br />Our dedicated data entry outsourcing services handle the heavy lifting, so you can focus on core business growth.</div>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">Stop Managing Data, Start Leveraging It.</h2>
+              <p className="text-2xl font-bold text-center">Partner with Our Data Entry Experts.</p>
+              <p className="text-center">Tired of the tedious and time-consuming task of data management? <br />Our dedicated data entry outsourcing services handle the heavy lifting, so you can focus on core business growth. We offer top-notch data entry virtual assistant services with a referral commission of up to 30%, and we also provide fully white-labelled solutions for resellers.</p>
 
-              <div className="grid md:grid-cols-2 gap-12 items-start">
+              <div className="grid md:grid-cols-2 gap-12 items-start mt-4">
                 {/* Left Column - Features List */}
                 <div className="flex flex-col gap-5">
 
-                  <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
-                    <h3 className="text-2xl md:text-3xl mb-4">Consult & Strategize</h3>
+                  <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[20px] rounded-[10px] h-auto">
+                    <h3 className="text-2xl mb-4">Consult & Strategize</h3>
                     <p>Begin with a free consultation to outline your exact needs, from high-volume data processing and e-commerce product entry to specialized data conversion projects. We listen to build a perfectly tailored solution.</p>
                   </div>
 
-                  <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
-                    <h3 className="text-2xl md:text-3xl mb-4">Launch in 24 Hours</h3>
+                  <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[20px] rounded-[10px] h-auto">
+                    <h3 className="text-2xl mb-4">Launch in 24 Hours</h3>
                     <p>Once aligned, our expert offshore data entry team in India mobilizes immediately. We onboard and launch your project within 24 hours, ensuring a seamless, efficient, and secure start with zero downtime.</p>
                   </div>
 
-                  <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
-                    <h3 className="text-2xl md:text-3xl mb-4">Validate with a Risk-Free Pilot</h3>
+                  <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[20px] rounded-[10px] h-auto">
+                    <h3 className="text-2xl mb-4">Validate with a Risk-Free Pilot</h3>
                     <p>Experience our accuracy and efficiency firsthand with a no-cost, no-obligation pilot project. Test our secure data entry processes and see the tangible results before making any commitment.</p>
                   </div>
 

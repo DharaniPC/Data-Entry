@@ -14,7 +14,7 @@ interface TestimonialsProps {
 export default function Testimonials({ testimonials }: TestimonialsProps) {
   return (
     <section className="py-16">
-      <div className="max-w-6xl mx-auto px-4 text-center">
+      <div className="max-w-5xl mx-auto px-4 text-center">
         {/* Section Heading */}
         <h2 className="text-3xl font-bold mb-4">Testimonials</h2>
 

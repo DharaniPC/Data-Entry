@@ -53,14 +53,14 @@ export default function DataEnrichmentAndAnalysisServices() {
             <section>
                 <Banner title="Data Enrichment & Analysis Services @ $5/Hour"
                     description="Start Your Free Trial Now! No Upfront Payment – Fast 24-Hour Turnaround!"
-                    bannerImage="/contact-us/Banner.jpg" />
+                    bannerImage="/services/data-enrichment-and-analysis-services/Banner.png" />
             </section>
 
             <section >
-                <div className="w-full flex justify-center px-6 py-15 bg-gray-50">
-                    <div className="max-w-7xl space-y-6">
-                        <h2 className="text-3xl font-bold">From Raw Data to Strategic Intelligence: Power Your Decisions</h2>
-                        <h3 className="text-2xl font-bold">In the competitive digital marketplace, outdated and superficial data is a liability. Perfect Data Entry transforms it into your greatest asset. We combine advanced data enrichment services with in-depth data analysis to convert incomplete, raw information into a rich, actionable intelligence engine. Our expertise bridges the gap between having data and truly understanding it, empowering you to predict trends, personalize customer engagement, and drive measurable growth.</h3>
+                <div className="w-full flex justify-center px-6 py-15 bg-gray-50 text-center">
+                    <div className="max-w-5xl space-y-6">
+                        <h2 className="text-3xl md:text-4xl font-bold">From Raw Data to Strategic Intelligence: Power Your Decisions</h2>
+                        <p className="text-gray-700 leading-relaxed">In the competitive digital marketplace, outdated and superficial data is a liability. Perfect Data Entry transforms it into your greatest asset. We combine advanced data enrichment services with in-depth data analysis to convert incomplete, raw information into a rich, actionable intelligence engine. Our expertise bridges the gap between having data and truly understanding it, empowering you to predict trends, personalize customer engagement, and drive measurable growth.</p>
 
                         <p className="text-gray-700 leading-relaxed">
                             Whether you need to enhance CRM leads with B2B data enrichment, gain market clarity through predictive analytics, or unlock the story within your datasets, we provide a seamless, end-to-end solution. Outsourcing data enrichment and analysis to our experts means gaining a strategic partner dedicated to refining your information and revealing the insights that fuel smarter business decisions.
@@ -77,10 +77,10 @@ export default function DataEnrichmentAndAnalysisServices() {
 
             <section>
                 <div className="w-full flex gap-10 justify-center py-15">
-                    <div className="max-w-7xl text-center">
+                    <div className="max-w-5xl text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Integrated Data Enrichment & Analysis Solutions</h2>
 
-                        <p className="mb-8">We turn data gaps into opportunities and numbers into narratives.</p>
+                        <h3 className="text-2xl font-bold mb-8">We turn data gaps into opportunities and numbers into narratives.</h3>
 
                         <IconGrid sectionContent={supportServiceContent} />
                     </div>
@@ -89,8 +89,8 @@ export default function DataEnrichmentAndAnalysisServices() {
 
             <section >
                 <div className="w-full flex justify-center px-6 py-15 bg-gray-50">
-                    <div className="max-w-7xl space-y-6">
-                        <h2 className="text-3xl font-bold text-center">Why Choose Our Enrichment & Analysis Services?</h2>
+                    <div className="max-w-5xl space-y-6">
+                        <h2 className="text-3xl md:text-4xl font-bold text-center">Why Choose Our Enrichment & Analysis Services?</h2>
 
                         <div className="w-full flex flex-row gap-10">
                             <div className="w-[50%]">
@@ -119,7 +119,7 @@ export default function DataEnrichmentAndAnalysisServices() {
                                 </ul>
                             </div>
                             <div className="w-[50%]">
-                                <img src="/contact-us/Banner.jpg" alt="Why US" className="w-[500px] h-auto"></img>
+                                <img src="/Why-Choose-Us.png" alt="Why US" className="w-[500px] h-auto"></img>
                             </div>
 
                         </div>
@@ -138,24 +138,24 @@ export default function DataEnrichmentAndAnalysisServices() {
 
             <section>
                 <div className="w-full flex gap-10 items-center justify-center py-15">
-                    <div className="max-w-7xl text-center">
+                    <div className="max-w-5xl text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How It Works</h2>
 
-                        <p className="mb-8">Your Path to Data-Driven Clarity in 3 Steps</p>
+                        <h3 className="text-2xl font-bold mb-8">Your Path to Data-Driven Clarity in 3 Steps</h3>
 
                         <div className="flex flex-row gap-8">
                             <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
-                                <h3 className="text-2xl md:text-3xl mb-4">Start a Conversation</h3>
+                                <h4 className="text-1xl md:text-2xl mb-4">1. Start a Conversation</h4>
                                 <p>Discuss your goals and data challenges. We'll design a tailored plan for data enrichment and business analysis.</p>
                             </div>
 
                             <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
-                                <h3 className="text-2xl md:text-3xl mb-4">Kick-Off in 24 Hours</h3>
+                                <h4 className="text-1xl md:text-2xl mb-4">2. Kick-Off in 24 Hours</h4>
                                 <p>We launch your project within 24 hours, assembling the right specialists and tools to begin immediately.</p>
                             </div>
 
                             <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
-                                <h3 className="text-2xl md:text-3xl mb-4">Start Your FREE Trial</h3>
+                                <h4 className="text-1xl md:text-2xl mb-4">3. Start Your FREE Trial</h4>
                                 <p>Experience the transformative power of enriched insights firsthand with a no-obligation pilot project. See the value before you commit.</p>
                             </div>
 
@@ -165,7 +165,7 @@ export default function DataEnrichmentAndAnalysisServices() {
             </section>
 
             <section id="contact" className="py-16 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-6">
+                <div className="max-w-5xl mx-auto px-6">
                     <div className="flex flex-col gap-5">
 
                         <div className="grid md:grid-cols-2 gap-12 items-start">

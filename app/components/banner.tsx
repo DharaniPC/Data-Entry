@@ -9,7 +9,7 @@ interface BannerProps {
 export default function Banner({ title, description, buttonLabel, buttonLink, bannerImage }: BannerProps) {
     const imageSrc = bannerImage || "/contact-us/Banner.jpg";
     return (
-        <div className={`relative bg-cover bg-center h-[60vh] flex items-center justify-center`}
+        <div className={`relative bg-cover bg-left-top h-[60vh] flex items-center justify-center`}
             style={{ backgroundImage: `url(${imageSrc})` }} >
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/60"></div>

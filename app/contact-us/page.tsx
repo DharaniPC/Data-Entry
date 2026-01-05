@@ -1,30 +1,61 @@
 import Banner from "../components/banner";
+import IconGrid from "../components/iconGrid";
+
+const supportServiceContent = [
+    {
+        title: "Pune - India",
+        description: "189/822 Sant Tukaram Nagar<br>Pimpri, Pimpri Chinchwad,<br>Pune (MH), <br>India - 411018"
+    },
+    {
+        title: "Mumbai - India",
+        description: "301B, B Wing <br>Moreshwar Apartment, Nerul (W),<br>Navi Mumbai (MH), <br>India  - 400706"
+    },
+    {
+        title: "Ireland",
+        description: "67A Convent Road,<br>Dun Loaghaire,<br>Dublin,<br>Ireland - A96 DW42"
+    },
+    {
+        title: "USA",
+        description: "490 N Civic Dr. 302<br>Walnut Creekn <br>California,<br>Unites States - 94596<br><a href='tel:+14152051438'>+14152051438</a>"
+    },
+    {
+        title: "Canada",
+        description: "Artiset Canadian Services Inc.<br>2418 Presquile Dr, Oakville,<br>Ontario, <br> Canada - L6H0A7<br><a href='tel:+14376066724'>+14376066724</a>"
+    }
+];
 
 export default function ContactPage() {
     return (
         <div className="w-full">
 
-            {/* Banner Section */}
-            <section>
-                <Banner title="Request Free Price Quote!"
-                    description=" No upfront payment. Just let us know your needs and we will provide your FREE price
-                        quote. Contact us now for clean, reliable, on-time delivery data – every time!!!"
-                    bannerImage="/contact-us/Banner.jpg" />
+            {/* Map Section */}
+            <section className="w-full h-[400px]">
+                <iframe
+                    className="w-full h-full"
+                    src="https://www.google.com/maps?q=101%2C%20Ocean%20Complex%2C%20Sector-18%2C%20Noida%2C%20Uttar%20Pradesh%20201301&output=embed"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+
             </section>
 
             {/* Contact Information + Form Section */}
             <section className="py-20 px-6 bg-gray-50">
-                <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
 
                     {/* LEFT SIDE – Address / Info */}
                     <div>
-                        <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold mb-6">Contact Information</h2>
 
                         <div className="space-y-6">
 
                             <div>
-                                <h3 className="text-lg font-semibold">Address</h3>
-                                <p className="text-gray-600">123 Perfect Data Entry Street, Chennai, India</p>
+                                <h3 className="text-lg font-semibold">Address: Head Quarters</h3>
+                                <p className="text-gray-600"><b>Noida - India</b><br></br>
+                                    101, Ocean Complex,<br></br>
+                                    Sector-18, Noida,<br></br>
+                                    Gautam Budh Nagar (U.P.),<br></br>
+                                    India - 201301</p>
                             </div>
 
                             <div>
@@ -69,7 +100,7 @@ export default function ContactPage() {
 
                     {/* RIGHT SIDE – Contact Form */}
                     <div className="bg-white p-8 rounded-xl shadow-md">
-                        <h2 className="text-3xl font-bold mb-6">Send Us a Message</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold mb-6">Send Us a Message</h2>
 
                         <form className="space-y-5">
 
@@ -101,16 +132,15 @@ export default function ContactPage() {
                 </div>
             </section>
 
-            {/* Map Section */}
-            <section className="w-full h-[400px]">
-                <iframe
-                    className="w-full h-full"
-                    src="https://www.google.com/maps/embed?pb=..."
-                    allowFullScreen
-                    loading="lazy"
-                ></iframe>
-            </section>
+            <section>
+                <div className="w-full flex justify-center px-6 py-15 bg-gray-50">
+                    <div className="max-w-5xl space-y-6">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Office Address</h2>
+                        <IconGrid sectionContent={supportServiceContent} />
+                    </div>
+                </div>
 
+            </section>
         </div>
     );
 }

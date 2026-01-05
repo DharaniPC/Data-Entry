@@ -7,19 +7,53 @@ export default function Footer() {
         {/* Logo */}
         <div className="mb-8 md:mb-0 w-[30%]">
           <Link href="/">
-            <img src="/Logo.png" alt="Perfect Data Entry" width="80" height="auto" />
+            <img src="/Logo-White.png" alt="Perfect Data Entry" width="80" height="auto" />
           </Link>
           <div className="mt-6 leading-relaxed">
-            <p>Perfect Data Entry team is amongst the industry’s top 10 virtual assistant companies. We build high-performance teams that deliver results! Our goodwill and body of work across the globe speak for themselves.</p>
+            <p>123 Main Street, City, Country</p>
+          <p>Email: <a href="mailto:contact@perfect-data-entry.com">contact@perfect-data-entry.com</a></p>
+          <p>Phone: <a href="tel:+91 98765 43210">+91 98765 43210</a></p>
           </div>
         </div>
 
 
         {/* Address & Contact - Center */}
         <div className="text-sm flex flex-col items-start w-[35%]">
-          <p>123 Main Street, City, Country</p>
-          <p>Email: info@example.com</p>
-          <p>Phone: +1 234 567 890</p>
+          <h4 className="text-xl font-semibold mb-2">Services</h4>
+          <nav>
+            <ul className="flex flex-col space-y-2 font-medium">
+                <li>
+                  <Link href="/data-entry-and-capture-services.html" className="block transition">
+                    Data Entry & Capture Services 
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/data-processing-and-integration-services.html" className="block transition">
+                    Data Processing & Integration Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/data-cleansing-and-validation-services.html" className="block transition">
+                    Data Cleansing & Validation Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/data-conversion-and-mining-services.html" className="block transition">
+                    Data Conversion & Mining Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/data-enrichment-and-analysis-services.html" className="block transition">
+                    Data Enrichment & Analysis Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/data-visualization-and-reporting-services.html" className="block transition">
+                    Data Visualization & Reporting Services
+                  </Link>
+                </li>
+              </ul>
+          </nav>
         </div>
 
 

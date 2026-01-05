@@ -76,13 +76,13 @@ export default function DataConversionAndMiningServices() {
             <section>
                 <Banner title="Data Conversion & Mining Services @ $5/Hour"
                     description="Start Your Free Trial Now! No Upfront Payment – Fast 24-Hour Turnaround!"
-                    bannerImage="/contact-us/Banner.jpg" />
+                    bannerImage="/services/data-conversion-and-mining-services/Banner.png" />
             </section>
 
             <section>
-                <div className="w-full flex justify-center px-6 py-15 bg-gray-50">
-                    <div className="max-w-7xl space-y-6">
-                        <h2 className="text-3xl font-bold">Unlock the True Value Hidden in Your Data</h2>
+                <div className="w-full flex justify-center px-6 py-15 bg-gray-50 text-center">
+                    <div className="max-w-5xl space-y-6">
+                        <h2 className="text-3xl md:text-4xl font-bold">Unlock the True Value Hidden in Your Data</h2>
                         <h3 className="text-2xl font-bold">Convert, Analyze, and Elevate Your Data for Competitive Advantage.</h3>
 
                         <p className="text-gray-700 leading-relaxed">
@@ -103,10 +103,10 @@ export default function DataConversionAndMiningServices() {
 
             <section>
                 <div className="w-full flex gap-10 justify-center py-15">
-                    <div className="max-w-7xl text-center">
+                    <div className="max-w-5xl text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Integrated Data Transformation & Insight Solutions</h2>
 
-                        <p className="mb-8">Transformative Data Mining & Conversion for Business Growth</p>
+                        <h3 className="text-2xl font-bold mb-8">Transformative Data Mining & Conversion for Business Growth</h3>
 
                         <div className="flex flex-col gap-10 text-left">
                             <div>
@@ -131,8 +131,8 @@ export default function DataConversionAndMiningServices() {
 
             <section >
                 <div className="w-full flex justify-center px-6 py-15 bg-gray-50">
-                    <div className="max-w-7xl space-y-6">
-                        <h2 className="text-3xl font-bold text-center">Why Partner with Us for Data Conversion & Mining?</h2>
+                    <div className="max-w-5xl space-y-6">
+                        <h2 className="text-3xl md:text-4xl font-bold text-center">Why Partner with Us for Data Conversion & Mining?</h2>
 
                         <div className="w-full flex flex-row gap-10">
                             <div className="w-[50%]">
@@ -161,7 +161,7 @@ export default function DataConversionAndMiningServices() {
                                 </ul>
                             </div>
                             <div className="w-[50%]">
-                                <img src="/contact-us/Banner.jpg" alt="Why US" className="w-[500px] h-auto"></img>
+                                <img src="/Why-Choose-Us.png" alt="Why US" className="w-[500px] h-auto"></img>
                             </div>
 
                         </div>
@@ -180,24 +180,24 @@ export default function DataConversionAndMiningServices() {
 
             <section>
                 <div className="w-full flex gap-10 items-center justify-center py-15">
-                    <div className="max-w-7xl text-center">
+                    <div className="max-w-5xl text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How It Works</h2>
 
-                        <p className="mb-8">Your Path to Actionable Data in 3 Simple Steps</p>
+                        <h3 className="text-2xl font-bold mb-8">Your Path to Actionable Data in 3 Simple Steps</h3>
 
                         <div className="flex flex-row gap-8">
                             <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
-                                <h3 className="text-2xl md:text-3xl mb-4">Start a Conversation</h3>
+                                <h4 className="text-1xl md:text-2xl mb-4">1. Start a Conversation</h4>
                                 <p>Discuss your goals, whether it's legacy data conversion or customer behavior mining. We'll map a solution.</p>
                             </div>
 
                             <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
-                                <h3 className="text-2xl md:text-3xl mb-4">Kick-Off in 24 Hours</h3>
+                                <h4 className="text-1xl md:text-2xl mb-4">2. Kick-Off in 24 Hours</h4>
                                 <p>Our team of conversion specialists and data scientists mobilizes within a day to begin your project.</p>
                             </div>
 
                             <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
-                                <h3 className="text-2xl md:text-3xl mb-4">Start Your FREE Trial</h3>
+                                <h4 className="text-1xl md:text-2xl mb-4">3. Start Your FREE Trial</h4>
                                 <p>Test our capabilities with a no-obligation pilot. Experience the quality of our conversion and the depth of our mining insights firsthand.</p>
                             </div>
 
@@ -207,7 +207,7 @@ export default function DataConversionAndMiningServices() {
             </section>
 
             <section id="contact" className="py-16 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-6">
+                <div className="max-w-5xl mx-auto px-6">
                     <div className="flex flex-col gap-5">
 
                         <div className="grid md:grid-cols-2 gap-12 items-start">

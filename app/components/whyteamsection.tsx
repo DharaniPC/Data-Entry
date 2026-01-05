@@ -34,7 +34,7 @@ export default function WhyTeamSection() {
 
   return (
     <div className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-6">
         {/* Section Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
           Why Perfect Virtual Team?

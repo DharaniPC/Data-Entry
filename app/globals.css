@@ -5,7 +5,17 @@
   --foreground: #171717;
 
   --primary-color: #447fb0;
-  --primary-color-10: #447fb01A;
+  --primary-color-10: #447fb05c;
+
+  --primary-btn-hover:#3D4C33;
+  --primary-optional:#58644C;
+  --secondary: #CAD2C5;
+  --secondary-optional:#A3B18A;
+  --bg1: #CAD2C5;
+
+  --prim: #65a3d6;
+  --dark-pri:#0f2d54;
+  
 }
 
 @theme inline {
@@ -15,9 +25,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-
-}
+@media (prefers-color-scheme: dark) {}
 
 body {
   background: var(--background);

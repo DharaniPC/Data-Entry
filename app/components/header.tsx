@@ -26,39 +26,44 @@ export default function Header() {
               <ul
                 className="absolute left-0 hidden w-56 bg-white shadow-lg rounded-lg group-hover:block transition-all z-50 py-2">
                 <li>
-                  <Link href="/data-entry-and-capture-services" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[var(--primary-color)] transition">
+                  <Link href="/data-entry-and-capture-services.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[var(--primary-color)] transition">
                     Data Entry & Capture Services 
                   </Link>
                 </li>
                 <li>
-                  <Link href="/data-processing-and-integration-services" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[var(--primary-color)] transition">
+                  <Link href="/data-processing-and-integration-services.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[var(--primary-color)] transition">
                     Data Processing & Integration Services
                   </Link>
                 </li>
                 <li>
-                  <Link href="/data-cleansing-and-validation-services" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[var(--primary-color)] transition">
+                  <Link href="/data-cleansing-and-validation-services.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[var(--primary-color)] transition">
                     Data Cleansing & Validation Services
                   </Link>
                 </li>
                 <li>
-                  <Link href="/data-conversion-and-mining-services" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[var(--primary-color)] transition">
+                  <Link href="/data-conversion-and-mining-services.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[var(--primary-color)] transition">
                     Data Conversion & Mining Services
                   </Link>
                 </li>
                 <li>
-                  <Link href="/data-enrichment-and-analysis-services" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[var(--primary-color)] transition">
+                  <Link href="/data-enrichment-and-analysis-services.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[var(--primary-color)] transition">
                     Data Enrichment & Analysis Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/data-visualization-and-reporting-services.html" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-[var(--primary-color)] transition">
+                    Data Visualization & Reporting Services
                   </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link href="about-us" className="hover:text-[var(--primary-color)] transition">
+              <Link href="about-us.html" className="hover:text-[var(--primary-color)] transition">
                 About Us
               </Link>
             </li>
             <li>
-              <Link href="contact-us" className="hover:text-[var(--primary-color)] transition">
+              <Link href="contact-us.html" className="hover:text-[var(--primary-color)] transition">
                 Contact Us
               </Link>
             </li>
