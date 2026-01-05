@@ -36,7 +36,9 @@ export default function AboutPage() {
             {/* Banner Section */}
             <section>
                 <Banner title="India's Leading Data Support and BPO/BPM Company"
-                    bannerImage="/about-us/Banner.png" />
+                    bannerImage="/about-us/Banner.png" 
+                    
+                    bannerMobImage="/about-us/Banner.png"/>
             </section>
 
             {/* Company Overview */}
@@ -156,8 +158,8 @@ export default function AboutPage() {
                     <div className="max-w-5xl space-y-6">
                         <h2 className="text-3xl md:text-4xl  font-bold text-center">Why Choose Perfect Data Entry?</h2>
 
-                        <div className="w-full flex flex-row gap-10">
-                            <div className="w-[50%]">
+                        <div className="w-full flex flex-col md:flex-row gap-10">
+                            <div className="w-full md:w-[50%]">
 
                                 <ul className="space-y-4 text-gray-700 list-none">
                                     {transforLeftSectionContent.map((content, index) => (
@@ -182,7 +184,7 @@ export default function AboutPage() {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="w-[50%]">
+                            <div className="w-full md:w-[50%]">
                                 <img src="/Why-Choose-Us.png" alt="Why US" className="w-[500px] h-auto"></img>
                             </div>
 

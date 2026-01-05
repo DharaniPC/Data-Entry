@@ -1,16 +1,34 @@
 
+'use client';
+
 interface BannerProps {
     title: string,
     description?: string,
     buttonLabel?: string,
     buttonLink?: string,
-    bannerImage?: string
+    bannerImage?: string,
+    bannerMobImage?: string;
 }
-export default function Banner({ title, description, buttonLabel, buttonLink, bannerImage }: BannerProps) {
-    const imageSrc = bannerImage || "/contact-us/Banner.jpg";
+export default function Banner({ title, description, buttonLabel, buttonLink, bannerImage, bannerMobImage }: BannerProps) {
+    const imageSrc = bannerImage;
+    const mobImageSrc = bannerMobImage;
     return (
-        <div className={`relative bg-cover bg-left-top h-[60vh] flex items-center justify-center`}
-            style={{ backgroundImage: `url(${imageSrc})` }} >
+        <div id="section-banner" className={`relative bg-cover bg-right md:bg-left-top flex items-center justify-center py-10 px-6 md:py-4 md:px-2
+            h-full sm:h-[60vh] md:h-[60vh] `} 
+             style={{
+        backgroundImage: `url(${mobImageSrc})`,
+      }}>
+
+                {/* Desktop override */}
+      <style jsx>{`
+        @media (min-width: 768px) {
+          #section-banner {
+            background-image: url(${imageSrc});
+          }
+        }
+      `}</style>
+
+
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/60"></div>
 

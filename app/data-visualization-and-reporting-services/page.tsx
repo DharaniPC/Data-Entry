@@ -53,7 +53,8 @@ export default function DataVisualizationAndReportingServices() {
             <section>
                 <Banner title="Data Visualization & Reporting Services @ $5/Hour"
                     description="Start Your Free Trial Now! No Upfront Payment – Fast 24-Hour Turnaround!"
-                    bannerImage="/services/data-visualization-and-reporting-services/Banner.png" />
+                    bannerImage="/services/data-visualization-and-reporting-services/Banner.png" 
+                    bannerMobImage="/services/data-visualization-and-reporting-services/MobileBanner.png"/>
             </section>
 
             <section>
@@ -78,11 +79,11 @@ export default function DataVisualizationAndReportingServices() {
             </section>
 
             <section>
-                <div className="w-full flex gap-10 justify-center py-15">
+                <div className="w-full flex gap-10 justify-center py-15 px-6">
                     <div className="max-w-5xl text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Comprehensive Visualization & Reporting Solutions</h2>
 
-                        <h3 className="text-2xl font-bold mb-8">We provide end-to-end services to make your data speak clearly and persuasively.</h3>
+                        <h3 className="text-base md:text-2xl font-bold mb-8">We provide end-to-end services to make your data speak clearly and persuasively.</h3>
 
                         <IconGrid sectionContent={supportServiceContent} />
                     </div>
@@ -94,8 +95,8 @@ export default function DataVisualizationAndReportingServices() {
                     <div className="max-w-5xl space-y-6">
                         <h2 className="text-3xl md:text-4xl  font-bold text-center">Why Choose Our Visualization & Reporting Services?</h2>
 
-                        <div className="w-full flex flex-row gap-10">
-                            <div className="w-[50%]">
+                        <div className="w-full flex flex-col md:flex-row gap-10">
+                            <div className="w-full md:w-[50%]">
 
                                 <ul className="space-y-4 text-gray-700 list-none">
                                     {transforLeftSectionContent.map((content, index) => (
@@ -120,7 +121,7 @@ export default function DataVisualizationAndReportingServices() {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="w-[50%]">
+                            <div className="w-full md:w-[50%]">
                                 <img src="/Why-Choose-Us.png" alt="Why US" className="w-[500px] h-auto"></img>
                             </div>
 
@@ -139,13 +140,13 @@ export default function DataVisualizationAndReportingServices() {
             </section>
 
             <section>
-                <div className="w-full flex gap-10 items-center justify-center py-15">
+                <div className="w-full flex gap-10 items-center justify-center py-15 px-6">
                     <div className="max-w-5xl text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How It Works</h2>
 
-                        <h3 className="text-2xl font-bold mb-8">Visualize Your Success in 3 Simple Steps</h3>
+                        <h3 className="text-base md:text-2xl font-bold mb-8">Visualize Your Success in 3 Simple Steps</h3>
 
-                        <div className="flex flex-row gap-8">
+                        <div className="flex flex-col md:flex-row gap-8">
                             <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
                                 <h4 className="text-1xl md:text-2xl mb-4">1. Start a Conversation</h4>
                                 <p>Tell us your reporting challenges and goals. We'll outline a custom data visualization strategy to meet your needs.</p>

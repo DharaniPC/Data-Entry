@@ -53,14 +53,15 @@ export default function DataProcessingAndIntegerationServices() {
             <section>
                 <Banner title="Data Processing & Integration Services @ $5/Hour"
                     description="Start Your Free Trial Now! No Upfront Payment – Fast 24-Hour Turnaround!"
-                    bannerImage="/services/data-processing-and-integration-services/Banner.png" />
+                    bannerImage="/services/data-processing-and-integration-services/Banner.png" 
+                    bannerMobImage="/services/data-processing-and-integration-services/MobileBanner.png"/>
             </section>
 
             <section>
                 <div className="w-full flex justify-center px-6 py-15 bg-gray-50 text-center">
                     <div className="max-w-5xl space-y-6">
                         <h2 className="text-3xl md:text-4xl font-bold">Transform Data Chaos into a Cohesive Business Asset</h2>
-                        <h3 className="text-2xl font-bold">End-to-End Data Processing & Integration for Real Business Clarity</h3>
+                        <h3 className="text-base md:text-2xl font-bold">End-to-End Data Processing & Integration for Real Business Clarity</h3>
 
                         <p className="text-gray-700 leading-relaxed">
                             In today's data-driven landscape, fragmented information across disparate systems creates inefficiencies and blindsides decision-making. Perfect Data Entry is your strategic partner to eliminate these bottlenecks. We provide end-to-end data processing and integration services designed to cleanse, standardize, and unify your data from all sources - databases, CRM, ERP, cloud apps, and spreadsheets into a single, reliable, and actionable system.
@@ -79,11 +80,11 @@ export default function DataProcessingAndIntegerationServices() {
             </section>
 
             <section>
-                <div className="w-full flex gap-10 justify-center py-15">
+                <div className="w-full flex gap-10 justify-center py-15 px-6">
                     <div className="max-w-5xl text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Comprehensive Data Processing & Integration Solutions</h2>
 
-                        <h3 className="text-2xl font-bold mb-8">We turn disparate data into your most valuable strategic tool.</h3>
+                        <h3 className="text-base md:text-2xl font-bold mb-8">We turn disparate data into your most valuable strategic tool.</h3>
 
                         <IconGrid sectionContent={supportServiceContent} />
                     </div>
@@ -95,8 +96,8 @@ export default function DataProcessingAndIntegerationServices() {
                     <div className="max-w-5xl space-y-6">
                         <h2 className="text-3xl md:text-4xl  font-bold text-center">Why Choose Our Data Processing & Integration Services?</h2>
 
-                        <div className="w-full flex flex-row gap-10">
-                            <div className="w-[50%]">
+                        <div className="w-full flex flex-col md:flex-row gap-10">
+                            <div className="w-full md:w-[50%]">
 
                                 <ul className="space-y-4 text-gray-700 list-none">
                                     {transforLeftSectionContent.map((content, index) => (
@@ -121,7 +122,7 @@ export default function DataProcessingAndIntegerationServices() {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="w-[50%]">
+                            <div className="w-full md:w-[50%]">
                                 <img src="/Why-Choose-Us.png" alt="Why US" className="w-[500px] h-auto"></img>
                             </div>
 
@@ -140,13 +141,13 @@ export default function DataProcessingAndIntegerationServices() {
             </section>
 
             <section>
-                <div className="w-full flex gap-10 items-center justify-center py-15">
+                <div className="w-full flex gap-10 items-center justify-center py-15 px-6">
                     <div className="max-w-5xl text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How It Works</h2>
 
-                        <h3 className="text-2xl font-bold mb-8">Simplify Your Data Ecosystem in 3 Easy Steps</h3>
+                        <h3 className="text-base md:text-2xl font-bold mb-8">Simplify Your Data Ecosystem in 3 Easy Steps</h3>
 
-                        <div className="flex flex-row gap-8">
+                        <div className="flex flex-col md:flex-row gap-8">
                             <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
                                 <h4 className="text-1xl md:text-2xl mb-4">1. Start a Conversation</h4>
                                 <p>Brief us on your data challenges. We analyze your systems and objectives to design a custom data processing and integration strategy.</p>

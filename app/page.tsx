@@ -58,15 +58,15 @@ export default function Home() {
 
         {/* Banner Section */}
         <section>
-          <div className="relative bg-cover bg-center h-[80vh] flex justify-center"
-            style={{ backgroundImage: `url(/home/Home-Page-Banner.png)` }} >
+          <div className="relative flex justify-center items-center bg-cover bg-center
+    h-full sm:h-[60vh] md:h-[80vh] bg-[url('/home/Home-Banner-Mobile.png')] md:bg-[url('/home/Home-Page-Banner.png')]" >
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/60"></div>
-            <div className="w-full flex justify-center px-6 py-15 items-center text-left text-white relative z-10">
-              <div className="max-w-5xl w-[60%] space-y-6 px-4 flex flex-col gap-5">
-                <h1 className="text-4xl font-bold">Secure & Scalable Data Entry Solutions</h1>
+            <div className="w-full flex flex-col lg:flex-row justify-center gap-8 px-6 py-15 items-center text-left text-white relative z-10">
+              <div className="max-w-5xl w-full lg:w-[60%] md:space-y-6 md:px-4 flex flex-col gap-5">
+                <h1 className="text-3xl md:text-4xl font-bold">Secure & Scalable Data Entry Solutions</h1>
 
-                <p className="max-w-2xl text-lg">
+                <p className="max-w-2xl text-sm md:text-lg">
                   We transform your unstructured documents, forms, and data into clean, actionable digital assets. Get secure, scalable, and cost-effective data entry outsourcing with a guaranteed 99.95% accuracy.
                 </p>
                 <a href="#contact">
@@ -75,7 +75,7 @@ export default function Home() {
                   </button>
                 </a>
               </div>
-              <div className="max-w-5xl w-[40%]">
+              <div className="max-w-5xl w-full lg:w-[40%]">
                 <img src="/home/Banner.jpg"></img>
               </div> 
             </div>
@@ -103,11 +103,11 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="w-full flex gap-10 justify-center py-15">
+          <div className="w-full flex gap-10 justify-center py-15 px-6">
             <div className="max-w-5xl text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Data Entry Services</h2>
 
-              <h3 className="text-2xl font-bold mb-4">Precision-Engineered Data Entry Services for Every Business Need</h3>
+              <h3 className="text-base md:text-2xl font-bold mb-4">Precision-Engineered Data Entry Services for Every Business Need</h3>
               <p className="mb-8">We deliver more than just data typing; we provide secure data processing solutions that become a reliable extension of your team. As your long-term data entry partner, we combine the highest accuracy with competitive pricing to fuel your business growth.</p>
 
               <IconGrid sectionContent={serviceContent} />
@@ -120,7 +120,7 @@ export default function Home() {
             <div className="max-w-5xl">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Elevate Your Data Management?</h2>
 
-              <h3 className="text-2xl font-bold mb-4">Stop wrestling with spreadsheets and manual entry. Outsource data entry to experts and unlock efficiency.</h3>
+              <h3 className="text-base md:text-2xl font-bold mb-4">Stop wrestling with spreadsheets and manual entry. Outsource data entry to experts and unlock efficiency.</h3>
 
               <ul className="space-y-4 mb-4">
                 <li className="flex gap-3 justify-center text-center">
@@ -156,9 +156,9 @@ export default function Home() {
           <div className="w-full flex justify-center px-6 py-15 bg-gray-50">
             <div className="max-w-5xl space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">Why We Are Your Trusted Data Entry Partner</h2>
-              <p className="text-2xl font-bold text-center">We go beyond basic typing to become a seamless extension of your team,<br /> delivering unmatched value and reliability.</p>
-              <div className="w-full flex flex-row gap-10">
-                <div className="w-[50%]">
+              <p className="text-base md:text-2xl font-bold text-center">We go beyond basic typing to become a seamless extension of your team,<br /> delivering unmatched value and reliability.</p>
+              <div className="w-full flex flex-col lg:flex-row gap-10">
+                <div className="w-full md:w-[50%]">
 
                   <ul className="space-y-4 text-gray-700 list-none">
                     {transforLeftSectionContent.map((content, index) => (
@@ -183,7 +183,7 @@ export default function Home() {
                     ))}
                   </ul>
                 </div>
-                <div className="w-[50%]">
+                <div className="w-full md:w-[50%]">
                   <img src="/Why-Choose-Us.png" alt="Why US" className="w-[500px] h-auto"></img>
                 </div>
 
@@ -201,7 +201,7 @@ export default function Home() {
           <div className="max-w-5xl mx-auto px-6">
             <div className="flex flex-col gap-5">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">Stop Managing Data, Start Leveraging It.</h2>
-              <p className="text-2xl font-bold text-center">Partner with Our Data Entry Experts.</p>
+              <p className="text-base md:text-2xl font-bold text-center">Partner with Our Data Entry Experts.</p>
               <p className="text-center">Tired of the tedious and time-consuming task of data management? <br />Our dedicated data entry outsourcing services handle the heavy lifting, so you can focus on core business growth. We offer top-notch data entry virtual assistant services with a referral commission of up to 30%, and we also provide fully white-labelled solutions for resellers.</p>
 
               <div className="grid md:grid-cols-2 gap-12 items-start mt-4">

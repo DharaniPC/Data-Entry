@@ -133,7 +133,7 @@ export default function ContactPage() {
             </section>
 
             <section>
-                <div className="w-full flex justify-center px-6 py-15 bg-gray-50">
+                <div className="w-full flex justify-center px-6 py-15">
                     <div className="max-w-5xl space-y-6">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Office Address</h2>
                         <IconGrid sectionContent={supportServiceContent} />

@@ -53,14 +53,15 @@ export default function DataEntryAndCaptureServices() {
             <section>
                 <Banner title="Data Entry & Capture Services @ $5/Hour"
                     description="Start Your Free Trial Now! No Upfront Payment – Fast 24-Hour Turnaround!"
-                    bannerImage="/services/data-entry-and-capture-services/Banner.png" />
+                    bannerImage="/services/data-entry-and-capture-services/Banner.png" 
+                    bannerMobImage="/services/data-entry-and-capture-services/MobileBanner.png"/>
             </section>
 
             <section >
                 <div className="w-full flex justify-center px-6 py-15 bg-gray-50 text-center">
                     <div className="max-w-5xl space-y-6">
                         <h2 className="text-3xl md:text-4xl font-bold">Precision at Your Fingertips</h2>
-                        <h3 className="text-2xl font-bold">Your Partner for End-to-End Data Management</h3>
+                        <h3 className="text-base md:text-2xl font-bold">Your Partner for End-to-End Data Management</h3>
 
                         <p className="text-gray-700 leading-relaxed">
                             In today's fast-paced business world, managing vast amounts of information is a critical challenge. At Perfect Data Entry, we eliminate this burden with our comprehensive data entry and data capture outsourcing services. We combine manual data entry expertise with advanced OCR and automated data capture technology to transform any raw data source - paper, PDFs, images, web forms - into clean, structured, and actionable digital assets. Whether you need high-volume data processing, e-commerce product entry, or specialized document digitization, we deliver a blend of speed, accuracy, and affordability that sets us apart.
@@ -79,11 +80,11 @@ export default function DataEntryAndCaptureServices() {
             </section>
 
             <section>
-                <div className="w-full flex gap-10 justify-center py-15">
+                <div className="w-full flex gap-10 justify-center py-15 px-6">
                     <div className="max-w-5xl text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Integrated Data Entry & Capture Solutions</h2>
 
-                        <h3 className="text-2xl font-bold mb-4">We provide a full spectrum of services to turn data chaos into clarity</h3>
+                        <h3 className="text-base md:text-2xl font-bold mb-4">We provide a full spectrum of services to turn data chaos into clarity</h3>
 
                         <IconGrid sectionContent={supportServiceContent} />
                     </div>
@@ -95,8 +96,8 @@ export default function DataEntryAndCaptureServices() {
                     <div className="max-w-5xl space-y-6">
                         <h2 className="text-3xl md:text-4xl font-bold text-center">Why Choose Us as Your Data Entry & Capture Partner?</h2>
 
-                        <div className="w-full flex flex-row gap-10">
-                            <div className="w-[50%]">
+                        <div className="w-full flex flex-col md:flex-row gap-10">
+                            <div className="w-full md:w-[50%]">
 
                                 <ul className="space-y-4 text-gray-700 list-none">
                                     {transforLeftSectionContent.map((content, index) => (
@@ -121,7 +122,7 @@ export default function DataEntryAndCaptureServices() {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="w-[50%]">
+                            <div className="w-full md:w-[50%]">
                                 <img src="/Why-Choose-Us.png" alt="Why US" className="w-[500px] h-auto"></img>
                             </div>
 
@@ -140,13 +141,13 @@ export default function DataEntryAndCaptureServices() {
             </section>
 
             <section>
-                <div className="w-full flex gap-10 items-center justify-center py-15">
+                <div className="w-full flex gap-10 items-center justify-center py-15 px-6">
                     <div className="max-w-5xl text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How It Works</h2>
 
-                        <h3 className="text-2xl font-bold mb-4">Simplify Your Data Management in 3 Steps</h3>
+                        <h3 className="text-base md:text-2xl font-bold mb-4">Simplify Your Data Management in 3 Steps</h3>
 
-                        <div className="flex flex-row gap-8">
+                        <div className="flex flex-col md:flex-row gap-8">
                             <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
                                 <h4 className="text-1xl md:text-2xl mb-4">1. Start a Conversation</h4>
                                 <p>Tell us about your project. We’ll analyze your needs for data entry or data capture services and outline a custom solution.</p>

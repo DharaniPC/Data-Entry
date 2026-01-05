@@ -76,14 +76,15 @@ export default function DataConversionAndMiningServices() {
             <section>
                 <Banner title="Data Conversion & Mining Services @ $5/Hour"
                     description="Start Your Free Trial Now! No Upfront Payment – Fast 24-Hour Turnaround!"
-                    bannerImage="/services/data-conversion-and-mining-services/Banner.png" />
+                    bannerImage="/services/data-conversion-and-mining-services/Banner.png" 
+                    bannerMobImage="/services/data-conversion-and-mining-services/MobileBanner.png"/>
             </section>
 
             <section>
                 <div className="w-full flex justify-center px-6 py-15 bg-gray-50 text-center">
                     <div className="max-w-5xl space-y-6">
                         <h2 className="text-3xl md:text-4xl font-bold">Unlock the True Value Hidden in Your Data</h2>
-                        <h3 className="text-2xl font-bold">Convert, Analyze, and Elevate Your Data for Competitive Advantage.</h3>
+                        <h3 className="text-base md:text-2xl font-bold">Convert, Analyze, and Elevate Your Data for Competitive Advantage.</h3>
 
                         <p className="text-gray-700 leading-relaxed">
                             In today's digital landscape, data is your most valuable asset—but only if it's usable and insightful. Perfect Data Entry bridges the gap between raw information and strategic advantage. We combine precision data conversion services with advanced predictive data mining solutions to transform your unstructured, incompatible, or legacy data into a clear, actionable resource.
@@ -102,11 +103,11 @@ export default function DataConversionAndMiningServices() {
             </section>
 
             <section>
-                <div className="w-full flex gap-10 justify-center py-15">
+                <div className="w-full flex gap-10 justify-center py-15 px-6">
                     <div className="max-w-5xl text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Integrated Data Transformation & Insight Solutions</h2>
 
-                        <h3 className="text-2xl font-bold mb-8">Transformative Data Mining & Conversion for Business Growth</h3>
+                        <h3 className="text-base md:text-2xl font-bold mb-8">Transformative Data Mining & Conversion for Business Growth</h3>
 
                         <div className="flex flex-col gap-10 text-left">
                             <div>
@@ -134,8 +135,8 @@ export default function DataConversionAndMiningServices() {
                     <div className="max-w-5xl space-y-6">
                         <h2 className="text-3xl md:text-4xl font-bold text-center">Why Partner with Us for Data Conversion & Mining?</h2>
 
-                        <div className="w-full flex flex-row gap-10">
-                            <div className="w-[50%]">
+                        <div className="w-full flex flex-col md:flex-row gap-10">
+                            <div className="w-full md:w-[50%]">
 
                                 <ul className="space-y-4 text-gray-700 list-none">
                                     {transforLeftSectionContent.map((content, index) => (
@@ -160,7 +161,7 @@ export default function DataConversionAndMiningServices() {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="w-[50%]">
+                            <div className="w-full md:w-[50%]">
                                 <img src="/Why-Choose-Us.png" alt="Why US" className="w-[500px] h-auto"></img>
                             </div>
 
@@ -179,13 +180,13 @@ export default function DataConversionAndMiningServices() {
             </section>
 
             <section>
-                <div className="w-full flex gap-10 items-center justify-center py-15">
+                <div className="w-full flex gap-10 items-center justify-center py-15 px-6">
                     <div className="max-w-5xl text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How It Works</h2>
 
-                        <h3 className="text-2xl font-bold mb-8">Your Path to Actionable Data in 3 Simple Steps</h3>
+                        <h3 className="text-base md:text-2xl font-bold mb-8">Your Path to Actionable Data in 3 Simple Steps</h3>
 
-                        <div className="flex flex-row gap-8">
+                        <div className="flex flex-col md:flex-row gap-8">
                             <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
                                 <h4 className="text-1xl md:text-2xl mb-4">1. Start a Conversation</h4>
                                 <p>Discuss your goals, whether it's legacy data conversion or customer behavior mining. We'll map a solution.</p>

@@ -53,14 +53,15 @@ export default function DataCleansingAndValidationServices() {
             <section>
                 <Banner title="Data Cleansing & Validation Services @ $5/Hour"
                     description="Start Your Free Trial Now! No Upfront Payment – Fast 24-Hour Turnaround!"
-                    bannerImage="/services/data-cleansing-and-validation-services/Banner.png" />
+                    bannerImage="/services/data-cleansing-and-validation-services/Banner.png" 
+                    bannerMobImage="/services/data-cleansing-and-validation-services/MobileBanner.png"/>
             </section>
 
             <section>
                 <div className="w-full flex justify-center px-6 py-15 bg-gray-50 text-center">
                     <div className="max-w-5xl space-y-6">
                         <h2 className="text-3xl md:text-4xl font-bold">The Foundation of Trustworthy Data: Clean, Verified, and Audit-Ready</h2>
-                        <h3 className="text-2xl font-bold">Don't let dirty data drain your resources. Partner with us to build a foundation of data you can trust.</h3>
+                        <h3 className="text-base md:text-2xl font-bold">Don't let dirty data drain your resources. Partner with us to build a foundation of data you can trust.</h3>
 
                         <p className="text-gray-700 leading-relaxed">
                             Inaccurate, duplicate, and unverified data is more than a nuisance, it corrupts decision-making, wastes marketing spend, and erodes customer trust. Perfect Data Entry provides the definitive solution. Our data cleansing and validation services are a combined force that scrubs your databases to spotless perfection and then certifies each entry's accuracy against authoritative sources.
@@ -79,11 +80,11 @@ export default function DataCleansingAndValidationServices() {
             </section>
 
             <section>
-                <div className="w-full flex gap-10 justify-center py-15">
+                <div className="w-full flex gap-10 justify-center py-15 px-6">
                     <div className="max-w-5xl text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our End-to-End Data Quality Solutions</h2>
 
-                        <h3 className="text-2xl font-bold mb-8">We tackle every aspect of data corruption to deliver pristine databases.</h3>
+                        <h3 className="text-base md:text-2xl font-bold mb-8">We tackle every aspect of data corruption to deliver pristine databases.</h3>
 
                         <IconGrid sectionContent={supportServiceContent} />
                     </div>
@@ -95,8 +96,8 @@ export default function DataCleansingAndValidationServices() {
                     <div className="max-w-5xl space-y-6">
                         <h2 className="text-3xl md:text-4xl font-bold text-center">Why Perfect Data Entry is Your Data Quality Partner</h2>
 
-                        <div className="w-full flex flex-row gap-10">
-                            <div className="w-[50%]">
+                        <div className="w-full flex flex-col md:flex-row gap-10">
+                            <div className="w-full md:w-[50%]">
 
                                 <ul className="space-y-4 text-gray-700 list-none">
                                     {transforLeftSectionContent.map((content, index) => (
@@ -121,7 +122,7 @@ export default function DataCleansingAndValidationServices() {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="w-[50%]">
+                            <div className="w-full md:w-[50%]">
                                 <img src="/Why-Choose-Us.png" alt="Why US" className="w-[500px] h-auto"></img>
                             </div>
 
@@ -140,13 +141,13 @@ export default function DataCleansingAndValidationServices() {
             </section>
 
             <section>
-                <div className="w-full flex gap-10 items-center justify-center py-15">
+                <div className="w-full flex gap-10 items-center justify-center py-15 px-6">
                     <div className="max-w-5xl text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How It Works</h2>
 
-                        <h3 className="text-2xl font-bold mb-8">Achieve Flawless Data in 3 Simple Steps</h3>
+                        <h3 className="text-base md:text-2xl font-bold mb-8">Achieve Flawless Data in 3 Simple Steps</h3>
 
-                        <div className="flex flex-row gap-8">
+                        <div className="flex flex-col md:flex-row gap-8">
                             <div className="flex-1 border-t-[6px] border-[var(--primary-color)] shadow-[0px_10px_51px_3px_rgba(0,0,0,0.15)] p-[30px] rounded-[10px] h-auto">
                                 <h4 className="text-1xl md:text-2xl mb-4">1. Start a Conversation</h4>
                                 <p>Share your data quality challenges. We analyze a sample to identify issues (duplicates, errors, invalid entries) and propose a targeted cleansing and validation strategy.</p>
